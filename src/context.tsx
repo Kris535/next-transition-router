@@ -1,7 +1,7 @@
 import {
   createContext,
   ReactNode,
-  use,
+  useContext,
   useCallback,
   useEffect,
   useMemo,
@@ -137,5 +137,5 @@ export function TransitionRouter({
 }
 
 export function useTransitionState() {
-  return use(TransitionRouterContext);
+  return useContext(TransitionRouterContext);
 }
